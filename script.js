@@ -1,25 +1,25 @@
 // Basic arithmetic functions
 function add(number1, number2) {
     displayNumber = number1 + number2;
-    display.textContent = displayNumber;
+    display.textContent = Number(displayNumber);
     return number1 + number2;
 }
 
 function subtract(number1, number2) {
     displayNumber = number1 - number2;
-    display.textContent = displayNumber;
+    display.textContent = Number(displayNumber);
     return number1 - number2;
 }
 
 function multiply(number1, number2) {
     displayNumber = number1 * number2;
-    display.textContent = displayNumber;
+    display.textContent = Number(displayNumber);
     return number1 * number2;
 }
 
 function divide(number1, number2) {
     displayNumber = number1 / number2;
-    display.textContent = displayNumber;
+    display.textContent = Number(displayNumber);
     return number1 / number2;
 }
 
@@ -70,13 +70,13 @@ function btnClickNumbers(btn) {
         btn = this.textContent;
         displayNumber += btn;
         number2 = displayNumber;
-        display.textContent = displayNumber;
+        display.textContent = Number(displayNumber);
         return;
     }
     btn = this.textContent;
     displayNumber += btn;
     // Display number 
-    display.textContent = displayNumber;
+    display.textContent = Number(displayNumber);
 }
 
 // clear the display number
